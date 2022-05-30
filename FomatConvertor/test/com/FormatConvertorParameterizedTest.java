@@ -37,12 +37,7 @@ public class FormatConvertorParameterizedTest {
 
 	@Test
 	public final void testConvert() {
-		try {
-			FormatConvertor.convert(input);
-		} catch (Exception e) {
-			fail(input.getText() + "," + input.getNum() + "\n" + e.toString());
-		}
-
+		FormatConvertor.convert(input);
 	}
 
 }
