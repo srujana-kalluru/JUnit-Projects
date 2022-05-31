@@ -1,8 +1,9 @@
 package com;
 
-import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import static org.junit.Assert.fail;
 
 public class FormatConvertorTest {
 
@@ -12,7 +13,7 @@ public class FormatConvertorTest {
 		try{
 			FormatConvertor.convert(input);
 		} catch (Exception e) {
-			fail(input.getText()+","+input.getNum()+"\n"+e.toString());
+			fail(input.getText()+","+input.getNum()+"\n"+ e);
 		}
 	}
 
